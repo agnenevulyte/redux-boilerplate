@@ -9,3 +9,11 @@ const appLoading = () => ({
 const appFailed = () => ({
   type: "APP_FAILED"
 });
+
+export const saveUser = (un, pw) => ({
+  type: "SAVE_USER",
+  username: un,
+  password: pw
+});
+
+// or if the second option in App.js then comment saveUser out
